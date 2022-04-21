@@ -1,0 +1,229 @@
+%-------------------------
+% Resume in Latex
+% Author : Sarthak Singh
+% Based on: Wilmer Gonzalez Repo
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+% Page coloring, fonts, and logos
+\usepackage{pagecolor}
+\usepackage{lato}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{fontawesome}
+% ---
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% ---
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+% ---
+
+% Custom commands
+\newcommand{\resumeItem}[1]{%2
+  \item\small{
+    %\textbf{#1}
+    #1
+    %{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{8pt}\item%-1
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{1pt}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeTech}[2]{
+ \textbf{#1:} #2
+}
+
+% COLOR THEMES SELECTION
+% For Light theme un-comment this and comment the Dark theme section below
+
+% \colorlet{textcolor}{black!80!gray}
+% \colorlet{backgroundcolor}{white}
+% \colorlet{urlcolor}{blue!25!white}
+% \AtBeginDocument{\color{textcolor}}
+
+% \newcommand{\otherThemeRef}{\href{https://github.com/asarthaks/asarthaks.github.io/raw/main/Sarthak_Singh_Resume_Latex_Light.pdf}{See light theme}}
+% \newcommand{\latestVersion}{\href{https://github.com/asarthaks/asarthaks.github.io/raw/main/Sarthak_Singh_Resume_Latex_Dark.pdf}{Get Latest version}}
+
+% For Dark theme un-comment this and comment the Light theme section above
+
+\colorlet{textcolor}{white!80!gray}
+\colorlet{backgroundcolor}{black!30!gray}
+\colorlet{urlcolor}{blue!25!white}
+\AtBeginDocument{\color{textcolor}}
+
+\newcommand{\otherThemeRef}{\href{https://github.com/asarthaks/asarthaks.github.io/raw/main/Sarthak_Singh_Resume_Latex_Light.pdf}{See light theme}}
+\newcommand{\latestVersion}{\href{https://github.com/asarthaks/asarthaks.github.io/raw/main/Sarthak_Singh_Resume_Latex_Dark.pdf}{Get Latest version}}
+% ---
+
+% DOCUMENT MAIN
+\begin{document}
+
+% For Dark theme also un-comment this line:
+\pagecolor{backgroundcolor}
+
+% HEADING
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://linktr.ee/asarthaks}{\Large Sarthak Singh}} &  \href{https://github.com/asarthaks}{ \faicon{github} \color{urlcolor} asarthaks} \\
+  \href{mailto:asarthaks@gmail.com}{asarthaks@gmail.com} &  \faicon{code} Python\\
+  \textsl{\small \latestVersion} & \textsl{\small \otherThemeRef}
+\end{tabular*}
+% ---
+
+% EXPERIENCE
+\section{Experience}
+\resumeSubHeadingListStart
+  
+\resumeSubheading
+      {Navia Life Care}{Gurgaon, India}
+      {Machine Learning Engineer}{August 2019 - Present}
+      \resumeItemListStart
+      \resumeItem{Created \textbf{ETL Pipeline} for the production data from scratch using PostGreSQL and Django framework and a proper reporting system for various analytics. Also made visualizations using basic HTML, CSS and JS and data ingestion pipeline for Kibana.}
+      \resumeItem{Created \textbf{end to end system for gathering and annotating data of doctor's handwritten prescription} in both forms (Online and Offline) achieving 90\%  accuracy in Offline recognition.}
+      \resumeItem{Using the gathered data, worked on \textbf{Online and Oﬄine Handwriting Recognition and Optical Character Recognition} on doctor's handwritten prescriptions using CNN, RNN's and CTC.}
+      \resumeItem{Deployed personalized \textbf{recommendation models for doctors} based on usage data.}
+      \resumeItem{Working on \textbf{Clinical Decision Support System} for EHR system using SNOMED CT Database using HealthCare data.}
+      \resumeItem{Created \textbf{Data Pipelines, Ingestion Pipelines and automated the reporting process and data management} of thousands of doctors and millions of patients.}
+      \resumeItem{\textbf{Developed APIs} for insights and and analytics dashboards for doctors.}
+      \resumeItem{\textbf{Developed Architecture} of various products to ensure scalability and proper reconciliation of data.}
+
+\resumeItemListEnd
+\resumeTech{Technologies}{Python, SQL, Django, Tensorflow, Docker, GCP, AWS, Javascript, MongoDB.}\\
+\resumeTech{Theory}{Data Preprocessing, Statistical Modeling, Deep Learning, Linear Algebra, NLP, Recommendation systems.}
+
+\resumeSubHeadingListEnd
+% ---
+
+% EDUCATION
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Guru Gobind Singh Indraprastha University}{New Delhi, India}
+      {\textbf{B.Tech. Computer Science Engineering} (7.3 CGPA)}{July. 2015 -- June. 2019}
+  \resumeSubHeadingListEnd
+% ---
+
+% \hfill \textsl{Following sections items are clickable}
+
+% CERTIFICATIONS
+\section{Certifications}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Applied AI Course}{}
+     {\href{www.google.com}{Fundamentals of Programming}}{Issued August 2021}
+    \resumeSubSubheading
+     {\href{}{Data Science: Exploratory Data Analysis and Data Visualization}}{Issued October 2021}
+    \resumeSubSubheading
+     {\href{}{Foundations of Natural Language Processing and Machine Learning}}{Issued January 2022}
+    \resumeSubheading
+      {Datacamp}{}
+    %  {\href{https://www.datacamp.com/statement-of-accomplishment/course/69c60378380d9c2d0c16bea9d9c2851cf5a05574}{Intoduction to Python}}{Issued December 2017}
+    %  \resumeSubSubheading
+    %  {\href{https://www.datacamp.com/statement-of-accomplishment/course/6f2b50e104698188ea3a194cebe11a462bd4ecf8}{Intermediate Python for Data Science}}{Issued December 2017}
+    %  \resumeSubSubheading
+     {\href{https://www.datacamp.com/statement-of-accomplishment/course/b343fce79f230eee00267252b5b1c233373e2684}{Python Data Science Toolbox (Part 1)}}{Issued January 2018}
+     \resumeSubSubheading
+     {\href{https://www.datacamp.com/statement-of-accomplishment/course/c41fbc414eeba7857959357b387658acb945f138}{Python Data Science Toolbox (Part 2)}}{Issued January 2018}
+    % \resumeSubSubheading
+    %  {\href{https://www.datacamp.com/statement-of-accomplishment/course/d270ebc72faf331216f2e7be82e2259c52aab9b6}{Importing Data in Python (Part 1)}}{Issued February 2018}
+    % \resumeSubSubheading
+    %  {\href{https://www.datacamp.com/statement-of-accomplishment/course/50714f90018b32249e2cad0625a132ef8a0a188b}{Importing Data in Python (Part 2)}}{Issued February 2018}
+     \resumeSubSubheading
+      {\href{https://www.datacamp.com/statement-of-accomplishment/course/0fdd991faee8c83ff7f1d5a5b3d921d6c2d80190}{Cleaning Data in Python}}{Issued April 2018}
+
+  \resumeSubHeadingListEnd
+% ---
+
+% PROJECTS
+\section{Projects}
+
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://github.com/asarthaks/FaceRecognizer}{Face Recognizer: Developed a Face Recognizer with OpenCV library which can detect faces using Eye Detection, create dataset to train itself, recognize faces live with webcam.}}
+
+    \resumeSubItem{\href{https://github.com/asarthaks/Captcha_Solver/}{Captcha Solver: Created a Captcha Solver using OpenCV library for image processing and created a CNN for the recognition of captcha letters.}}
+    
+  \resumeSubHeadingListEnd
+% ---
+
+% % PERSONAL PUBLICATIONS
+% \section{Personal publications}
+
+%   \resumeSubHeadingListStart
+%     \resumeSubItem{\href{http://scivisionpub.com/pdfs/diodes-laser-in-office-endoscopic-surgery-center-for-nasal-obstruction-and-snoring-558.pdf}{Sajidxa Mariño, Jesus Lares, Wilmer Gonzalez. Diode’s Laser in Office Endoscopic Surgery Center for Nasal Obstruction
+% and Snoring. J Med - Clin Res \& Rev. 2018; 2(6): 1-3.}}
+
+%     \resumeSubItem{\href{https://www.slideshare.net/WilmerGonzalez7/twitter-a-data-source-for-the-academy}{Twitter, A data source for the academy (spanish).}}
+    
+%     \resumeSubItem{\href{https://www.slideshare.net/WilmerGonzalez7/github-social-coding-the-social-network-for-programmers}{GitHub \& Social Coding. Social network for programmers (spanish).}}
+    
+%     \resumeSubItem{\href{https://www.slideshare.net/WilmerGonzalez7/reproducible-research-a-case-of-study-on-allocation-of-university-places}{Reproducible Research. Case of study: allocation of university places in UCV by OPSU (spanish).}}
+    
+%   \resumeSubHeadingListEnd
+% ---
+
+% PROGRAMMING SKILLS
+\section{Other programming tools}
+  \resumeSubHeadingListStart
+  \resumeSubItem{\textbf{Cloud services:} AWS(EC2, S3), GCP.}
+  
+  \resumeSubItem{\textbf{Deep learning frameworks:} Keras, Tensorflow.}
+  
+  \resumeSubItem{\textbf{Database:} PostgreSQL, MongoDB, ElasticSearch.}
+  
+  \resumeSubItem{\textbf{Python:} numpy, pandas, sci-kit, django.}
+  
+  \resumeSubItem{\textbf{Webserver:} Gunicorn, Apache, Docker.}
+  
+  \resumeSubHeadingListEnd
+
+% ---
+\end{document}
